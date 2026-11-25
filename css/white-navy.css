@@ -343,3 +343,18 @@ body .footer.footer--studio .footer-wordmark:not(.is-dot-forming) {
  body .header .nav__link::before { display:none; }
  body .header .nav__link.is-active { background:transparent; }
 }
+
+/* ---------- Hero title depth ---------------------------------------------
+   The intro animates each word out of filter:blur(8px), and that blurred
+   mid-flight state is what reads as a shadow. The blur itself can't stay —
+   it would leave the headline unreadable — so the same depth is carried as
+   a real text-shadow once the words have settled.
+
+   The trailing <em> opts out: it is white type sitting on the navy
+   highlight block, and scroll-polish.css duplicates its glyphs through a
+   ::after with content:attr(data-highlight-text), so a shadow there paints
+   twice and smears. text-shadow inherits, hence the explicit reset on its
+   child word spans too. */
+body .hero__title { text-shadow:0 2px 3px #102b5012,0 14px 34px #102b5026; }
+body .hero__title em:last-of-type,
+body .hero__title em:last-of-type :is(span,.fx-word) { text-shadow:none; }
