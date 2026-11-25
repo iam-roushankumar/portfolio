@@ -483,7 +483,7 @@
   var T = {
     name: "Roushan Kumar",
     role: "Palantir Applied Engineer @ Vanyar",
-    tagline: "Palantir Foundry developer building agentic AI on enterprise data.",
+    tagline: "Palantir Applied Engineer building agentic AI on enterprise data.",
     email: "hey.roushan.k@gmail.com",
     github: "https://github.com/dev-rkSharma",
     linkedin: "https://www.linkedin.com/in/roushan-kumar",
@@ -699,6 +699,16 @@
     term && !term.hidden ? closeTerm() : openTerm();
   });
   document.addEventListener("fx:terminal", openTerm);
+
+  /* The nav's terminal tab is an action, not a section link. It keeps a real
+     href so nav-highlight.js can still key its icon off the slug, so the
+     default jump has to be suppressed here. */
+  document.addEventListener("click", function (e) {
+    var trigger = e.target.closest && e.target.closest('[data-action="terminal"]');
+    if (!trigger) return;
+    e.preventDefault();
+    term && !term.hidden ? closeTerm() : openTerm();
+  });
 
   /* ---------- 5. Skills graph -------------------------------------------- */
   /* Built from the .skill-box markup (hubs = box headings, leaves = chips)

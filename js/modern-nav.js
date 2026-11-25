@@ -1,7 +1,7 @@
 (function(){
  'use strict';
  var header=document.querySelector('.header'),nav=document.querySelector('.nav__list');if(!header||!nav)return;
- var labels={'#home':'Home','#projects':'Projects','#skills':'Skills','#experience':'Journey','#badges':'Badges','#about-me':'About','#contacts':'Contact'};
+ var labels={'#home':'Home','#projects':'Projects','#skills':'Skills','#experience':'Journey','#badges':'Badges','#about-me':'About','#contacts':'Contact','#terminal':'Terminal'};
  var links=Array.from(nav.querySelectorAll('.nav__link'));
  links.forEach(function(link,index){
   var label=labels[link.getAttribute('href')];

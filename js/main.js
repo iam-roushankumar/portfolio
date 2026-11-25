@@ -547,7 +547,7 @@
   /* ---------- 9. Console easter egg ------------------------------------ */
   if (window.console && console.log) {
     console.log(
-      "%c  #  Roushan Kumar %c— Palantir Foundry developer, data engineer\n\n" +
+      "%c  #  Roushan Kumar %c— Palantir Applied Engineer, data engineer\n\n" +
       "%c  Poking around in devtools? Let's talk:\n" +
       "%c  github.com/dev-rkSharma\n" +
       "%c  linkedin.com/in/roushan-kumar",

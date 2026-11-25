@@ -13,7 +13,7 @@ window.PORTFOLIO_STORIES = {
   '1': {theme:'operations',discipline:'Operational data products',short:'From spreadsheet cycles to governed reporting',
     context:'Recurring operational reports across business units relied on spreadsheet-based reporting. The implementation moves that recurring work into governed Foundry pipelines and a Workshop front-end.',
     choices:[['Prepare recurring data','Foundry pipelines perform the recurring data preparation for operational reports.'],['Model the business objects','Ontology modeling connects prepared data to the reporting application.'],['Expose a governed interface','Workshop provides the front-end, with access controls configured as part of the implementation.']],
-    result:'Recurring operational reporting through governed pipelines and Workshop, replacing the manual spreadsheet-based workflow described in this project.'},
+    result:'Recurring operational reporting through governed pipelines and Workshop, replacing the manual spreadsheet-based process it was built to retire.'},
   '2': {theme:'signals',discipline:'Timeseries & analytics',short:'Operational signals, made explorable',
     context:'Stakeholders needed to explore trends and anomalies in operational timeseries data. This work combines timeseries modeling with custom Quiver dashboards for self-serve analysis.',
     choices:[['Start with stakeholder needs','Requirements gathering informs the dashboard design.'],['Model the timeseries','Operational data is modeled for timeseries analysis.'],['Build the exploration surface','Quiver dashboards present trend and anomaly views over that data.']],

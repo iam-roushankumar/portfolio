@@ -10,7 +10,7 @@
   if(rail){
     var selected=make('section','selected-work');selected.setAttribute('aria-labelledby','selected-work-title');
     selected.append(make('p','work-kicker','Three ways into the work'));
-    var heading=make('h3','selected-work__title','Systems, from foundation to interface.');heading.id='selected-work-title';selected.append(heading);
+    var heading=make('h3','selected-work__title','Systems, from foundation to ');heading.append(make('em','sig-em','interface'),document.createTextNode('.'));heading.id='selected-work-title';selected.append(heading);
     var grid=make('div','selected-work__grid');
     ['7','6','1'].forEach(function(key,i){var card=cards.find(function(c){return c.dataset.projectKey===key;});if(!card)return;
       var story=stories[key],button=make('button','selected-work__card');button.type='button';button.style.setProperty('--work-accent',getComputedStyle(card).getPropertyValue('--project-accent'));
